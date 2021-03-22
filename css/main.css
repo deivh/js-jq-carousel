@@ -40,7 +40,7 @@
     left: auto;
     right: 0;
 }
-.nav {
+nav {
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -50,14 +50,10 @@
     background: rgba(0,0,0,.7);
     color:grey;
 }
-.nav > i {
+nav > i {
     margin: 0 20px;
     display: inline-block;
 }
-.nav > i.active {
+nav > i.active {
     color: blue;
-}
-
-.nav .pointer {
-    width: 10px;
 }

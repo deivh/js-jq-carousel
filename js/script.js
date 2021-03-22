@@ -14,22 +14,22 @@ function prevClck(){
 }
 
 function prevClckIcon(){
-    var activeIcon = $('far.active');
+    var activeIcon = $('i.far.active');
 
     if (activeIcon.hasClass('first')) {
-        var prevIcon =$('far.last');
+        var prevIcon =$('i.far.last');
         activeIcon.removeClass('active');
         prevIcon.addClass('active');
     
     } else {
-        var prevIcon = activeIcon.prev('far');
+        var prevIcon = activeIcon.prev('i.far');
         activeIcon.removeClass('active');
         prevIcon.addClass('active');
     }
 }
 
 function nextClck(){
-    var activeImg = $('.active');
+    var activeImg = $('img.active');
 
     if (activeImg.hasClass('last')) {
         var prevImg =$('img.first');
@@ -44,15 +44,15 @@ function nextClck(){
 }
 
 function nextClckIcon(){
-    var activeIcon = $('far.active');
+    var activeIcon = $('i.far.active');
 
-    if (activeIcon.hasClass('far.last')) {
-        var prevIcon =$('far.first');
+    if (activeIcon.hasClass('last')) {
+        var prevIcon =$('i.far.first');
         activeIcon.removeClass('active');
         prevIcon.addClass('active');
     
     } else {
-        var prevIcon = activeIcon.next('far');
+        var prevIcon = activeIcon.next('i.far');
         activeIcon.removeClass('active');
         prevIcon.addClass('active');
     }
